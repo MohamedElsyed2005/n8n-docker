@@ -6,12 +6,11 @@ services:
     ports:
       - "5680:5678"
     environment:
-      - N8N_HOST=0.0.0.0
+      - N8N_HOST=0.0.0.0 
       - N8N_PORT=5678
-
-      - WEBHOOK_URL=https://unsecludedly-unhutched-otha.ngrok-free.dev/   # مهم جداً
       
       - N8N_EDITOR_BASE_URL=https://unsecludedly-unhutched-otha.ngrok-free.dev/
+      
       - GENERIC_TIMEZONE=Africa/Cairo
       - N8N_BASIC_AUTH_ACTIVE=true
       - N8N_BASIC_AUTH_USER=admin
